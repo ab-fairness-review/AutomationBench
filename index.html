@@ -32,6 +32,7 @@ body { background: var(--bg); color: var(--fg); font: 14px/1.5 var(--f-body); pa
 header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px; padding-block: 18px 12px; border-bottom: 1px solid var(--line) }
 h1 { font: 600 22px/1.2 var(--f-display); margin: 0; letter-spacing: .01em; text-wrap: balance }
 .sub { color: var(--muted); font-size: 13px }
+.ver summary { cursor: pointer } .ver code { font: 12px var(--f-mono) } .ver ul { margin: 4px 0 0; padding-left: 18px }
 nav.views { display: flex; gap: 4px; margin-left: auto }
 nav.views button { font: 500 13px var(--f-body); border: 1px solid var(--line); background: var(--panel); color: var(--fg); padding: 5px 12px; border-radius: 6px; cursor: pointer }
 nav.views button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg) }
@@ -179,6 +180,7 @@ details.file summary span { color: var(--muted); font-size: 12px }
 <header class="top">
   <h1>AutomationBench fairness fixes</h1>
   <span class="sub" id="sub"></span>
+  <details class="ver sub"><summary>Latest version (updates as review continues)</summary><ul><li>Frozen snapshots linked from the PRs: <a href="v1/">v1</a></li></ul><ul><li><code>pr/api-simulator</code> <code>98a0a75bf7</code></li><li><code>pr/checkers</code> <code>0450a388e4</code></li><li><code>pr/text-matcher</code> <code>8f70fc58f4</code></li><li><code>pr/any-of-needles</code> <code>6799181b7c</code></li><li><code>pr/checker-followups</code> <code>df45c2b675</code></li><li><code>pr/finance</code> <code>90aa7330b4</code></li><li><code>pr/hr</code> <code>6a7fb4a08d</code></li><li><code>pr/marketing</code> <code>2622b155f1</code></li><li><code>pr/operations</code> <code>083ca2b634</code></li><li><code>pr/sales</code> <code>7420ed9db0</code></li><li><code>pr/support</code> <code>ff78775f2b</code></li></ul></details>
   <nav class="views" aria-label="View">
     <button id="v-tasks" aria-pressed="true">Tasks</button>
     <button id="v-fw" aria-pressed="false">Simulator &amp; checkers</button>
